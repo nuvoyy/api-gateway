@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "b25d6f3c-9f1d-4f9e-8a5b-3c6eaf1a3e69",
+    "name": "My Microservices Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Students (core-service)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "students"]
+        }
+      }
+    },
+    {
+      "name": "Create Student (core-service)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Charlie\",\n  \"age\": 24,\n  \"groupName\": \"CS-301\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "students"]
+        }
+      }
+    },
+    {
+      "name": "Get Students via API Gateway",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "students"]
+        }
+      }
+    }
+  ]
+}
