@@ -43,6 +43,20 @@
       }
     },
     {
+  "name": "Delete Student (core-service)",
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "url": {
+      "raw": "http://localhost:8081/api/students/1",
+      "protocol": "http",
+      "host": ["localhost"],
+      "port": "8081",
+      "path": ["api", "students", "1"]
+    }
+  }
+},
+    {
       "name": "Get Students via API Gateway",
       "request": {
         "method": "GET",
